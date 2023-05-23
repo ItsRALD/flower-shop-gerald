@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shop</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+    <header>
+        <a class="logo" href="#">Flower</a>
+
+        <nav class="navbar"> 
+            <a href="#home" class="active">home</a>
+            <a href="#products">products</a>
+            <a href="#contact">contact</a>
+            
+        </nav>
+
+        
+    </header>
+
+
+    <section class="home" id="home">
+        <div class="content">
+            <h1>Living Flower</h1>
+            
+        </div>
+
+    </section>
+    
+        </div>
+    </section>
+
+    <section id="products">
+
+        <div class="cart">
+          <h2>Add to Cart</h2>
+          <ul class="cart-items">
+            <!-- Cart items will be added dynamically using JavaScript -->
+          </ul>
+          <p class="cart-total">Total: <span class="total">₱0</span></p>
+          <button class="checkout">Checkout</button>
+        </div>
+  
+        <div class="overlay">
+          <div class="checkout-form">
+            <h2>Checkout</h2>
+            <form>
+              <label for="name">Name:</label>
+              <input type="text" id="name" required>
+      
+              <label for="email">Email:</label>
+              <input type="email" id="email" required>
+      
+              <label for="address">Address:</label>
+              <textarea id="address" required></textarea>
+      
+              <p>Select Payment Method:</p>
+              <div class="payment-options">
+                <input type="radio" id="gcash" name="payment-method" value="gcash" checked>
+                <label for="gcash">GCash</label>
+                
+                <input type="radio" id="visa" name="payment-method" value="visa">
+                <label for="visa">Visa</label>
+                
+                <input type="radio" id="paypal" name="payment-method" value="paypal">
+                <label for="paypal">PayPal</label>
+              </div>
+      
+              <div class="button-group">
+                <button type="submit">Place Order</button>
+                <button type="button" class="cancel">Cancel</button>
+              </div>
+            </form>
+          </div>
+        </div>
+  
+        <h2 class="food-menu-heading">Flowers Menu</h2>
+        <div class="food-menu-container container">
+          <div class="food-menu-item">
+            <div class="food-img">
+              <img src="https://cdn.shopify.com/s/files/1/2601/3352/products/DSC01343_1946x.jpg?v=1626848564" alt="" />
+            </div>
+            <div class="food-description">
+              <h1 class="food-title">Sunflower</h2>
+              <p class="food-details">
+                The common sunflower has a green erect stem covered in coarse hairs, growing on average around 2m tall. The leaves are broad, with serrated edges, and are alternately arranged on the stem. The 'flower' of the common sunflower is actually a pseudanthium, or flowerhead, made up of many small flowers.
+              </p>
+              <p class="food-price">₱1500</p>
+              <button class="add-to-cart">Add to Cart</button>
+             
+            </div>
+          </div>
+  
+          <div class="food-menu-item">
+            <div class="food-img">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDBjnRcvfPF5loChJrbieO3rMwn_0J68QuNg&usqp=CAU"
+                alt="error"
+              />
+            </div>
+            <div class="food-description">
+                <h2 class="food-title">
+                    Carnation flower
+                </h2>
+              <p class="food-details">
+                The carnation flower symbolizes Love, Captivation and Distinction and today, it's no wonder that it's so widely used and is the best alternative to rose bouquets. It also makes a lovely addition to any bunch because of its long-lasting freshness and fragrance.
+              </p>
+              <p class="food-price">₱1210</p>
+              <button class="add-to-cart">Add to Cart</button>
+  
+      
+            </div>
+          </div>
+          <div class="food-menu-item">
+            <div class="food-img">
+              <img src="https://fyf.tac-cdn.net/images/products/small/FTD-C12-4792.jpg?auto=webp&quality=60&width=650" alt="" />
+            </div>
+            <div class="food-description">
+              <h2 class="food-title">Daisy flower</h2>
+              
+              <p class="food-details">
+                <p>
+                    Daisies are actually closely related to artichokes, so they're a great source of vitamin C. Additionally, daisies also have lots of medicinal properties they're known to slow bleeding, relieve indigestion, and soothe coughs.
+                </p>
+              </p>
+              <p class="food-price">₱1000</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="food-menu-item">
+            <div class="food-img">
+              <img src="https://b3n8a3n8.rocketcdn.me/wp-content/uploads/2021/11/cyclamen-care-01.jpg" alt="" />
+            </div>
+            <div class="food-description">
+              <h2 class="food-title">Cyclamen flower's</h2>
+              <p class="food-details">
+                This species is very popular with florists, and it is frequently called the "Florist's Cyclamen." They have a mounded growth habit and measure 6 to 9 inches tall. Their leaves are heart-shaped, and the flowers are sweetly scented. The blooms come in a variety of colors, including white, pink, red, magenta, or lavender.
+              </p>
+              <p class="food-price">₱1769</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="food-menu-item">
+            <div class="food-img">
+              <img src="https://d2g5rg7hacxakz.cloudfront.net/p/ap17593.jpg?d=1200x1200" alt="" />
+            </div>
+            <div class="food-description">
+              <h2 class="food-title">Narcissus flower</h2>
+              <p class="food-details">
+                Narcissi flowers are also seen to represent; creativity, inspiration, awareness and inner reflection, forgiveness, and vitality. If you give a bunch of narcissi to a loved one it means 'they're the only one' and is said to ensure happiness.
+              </p>
+              <p class="food-price">₱950</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="food-menu-item">
+            <div class="food-img">
+              <img src="https://dy1yydbfzm05w.cloudfront.net/media/catalog/product/cache/466bc07fdd9f3406dd5cbfa6621097e2/d/a/daffodil_buttery_blonde_daffodil_vase_4.jpg" alt="" />
+            </div>
+            <div class="food-description">
+              <h2 class="food-title">Poppy flower</h2>
+              <p class="food-details">
+                Poppies have lobed or dissected leaves and milky sap. The buds are often nodding and are borne on solitary stalks. The flowers have four to six petals with numerous stamens surrounding the ovary. The two sepals usually drop off as the petals unfold.
+              </p>
+              <p class="food-price">₱1800</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="food-menu-item">
+            <div class="food-img">
+              <img src="https://img.freepik.com/premium-photo/beautiful-poppies-bouquet-wooden-table-room-common-poppy-opium-poppy-flowers-vase_250813-1571.jpg?w=2000" alt="" />
+            </div>
+            <div class="food-description">
+              <h2 class="food-title">Orchid flower</h2>
+              <p class="food-details">
+                Orchid flowers have three sepals, three petals and a three-chambered ovary. The three sepals and two of the petals are often similar to each other but one petal is usually highly modified, forming a "lip" or labellum.
+              </p>
+              <p class="food-price">₱800</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="food-menu-item">
+            <div class="food-img">
+              <img src="http://4.bp.blogspot.com/-0T4j_chqbZM/UpTFCmMxtvI/AAAAAAAAA20/fTuaM1m5ReM/s1600/hd+tulip+flower+wallpaper+7.jpg" alt="" />
+            </div>
+            <div class="food-description">
+              <h2 class="food-title">Tulip flower</h2>
+              <p class="food-details">
+                Tulips are erect flowers with long, broad, parallel-veined leaves and a cup-shaped, single or double flower at the tip of the stem. Colors of the flowers can range anywhere from red to yellow to white. Some tulips are varicolored as a result of a viral disease carried and transferred to the plants by aphids.
+              </p>
+              <p class="food-price">₱1100</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="food-menu-item">
+            <div class="food-img">
+              <img src="https://www.shutterstock.com/image-photo/bouquet-blue-irises-vase-on-260nw-572288032.jpg" alt="" />
+            </div>
+            <div class="food-description">
+              <h2 class="food-title">Iris flower</h2>
+              <p class="food-details">
+                Iris flowers have an unusual structure and appearance. The petals resemble a classic fleur-de-lis symbol, with some petals rising up while others cascade down. The center petals stand upright and are known botanically as standards. These tall petals stand like signal flags, waving in potential pollinators.
+              </p>
+              <p class="food-price">₱1300</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    
+
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h1>contact <span> us</span> </h1>
+        </div>
+
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h4>quick links</h4>
+                <div class="link">
+                    <h1 href="#home">Home</h1>
+                    <h1 href="#about">About</h1>
+                    <h1 href="#products">Products</h1>
+                    <h1 href="#review">Review</h1>
+                    <h1 href="#contact">Contact</h1>
+                </div>
+            </div>
+
+            <div class="box">
+                <h4>Location</h4>
+                <div class="link">
+                    <h1 href="#">Philippines</h1>
+                    <h1 href="#">Zambales</h1>
+                    <h1 href="#">Olongapo City</h1>
+                    <h1 href="#">Kale Beach</h1>
+                </div>
+            </div>
+
+            <div class="box">
+                <h4>contact info</h4>
+                <div class="link">
+                    <h1 href="#">09668731601</h1>
+                    <h1 href="#">geraldterrado02@gmail.com</h1>
+                    <h1 href="#">Gerald H. Terrado</h1>
+                </div>
+            </div>
+
+    <script src="assets/script/main.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const addToCartButtons = document.querySelectorAll(".add-to-cart");
+        const cartItems = document.querySelector(".cart-items");
+        const totalElement = document.querySelector(".total");
+        const checkoutButton = document.querySelector(".checkout");
+        const overlay = document.querySelector(".overlay");
+        const checkoutForm = document.querySelector(".checkout-form");
+        const cancelButton = document.querySelector(".cancel");
+
+        let cart = [];
+
+        addToCartButtons.forEach(function(button) {
+        button.addEventListener("click", function() {
+            const product = button.parentNode;
+            const title = product.querySelector(".food-title").textContent;
+            const price = parseFloat(product.querySelector(".food-price").textContent.slice(1));
+
+            // Check if the product is already in the cart
+            const existingItem = cart.find(item => item.title === title);
+
+            if (existingItem) {
+            // Increment the quantity if the product is already in the cart
+            existingItem.quantity++;
+            existingItem.total += price;
+            } else {
+            // Add the product to the cart
+            const item = {
+                title: title,
+                price: price,
+                quantity: 1,
+                total: price
+            };
+            cart.push(item);
+            }
+
+            updateCart();
+        });
+        });
+
+        function updateCart() {
+        cartItems.innerHTML = "";
+        let cartTotal = 0;
+
+        cart.forEach(function(item) {
+            const cartItem = document.createElement("li");
+            cartItem.textContent = `${item.title} (Quantity: ${item.quantity}) - ₱${item.total.toFixed(2)}`;
+            
+            const removeButton = document.createElement("button");
+            removeButton.className = "remove-button";
+            removeButton.textContent = "Remove";
+            removeButton.addEventListener("click", function() {
+            removeItemFromCart(item);
+            });
+            
+            cartItem.appendChild(removeButton);
+            cartItems.appendChild(cartItem);
+            cartTotal += item.total;
+        });
+
+        totalElement.textContent = `₱${cartTotal.toFixed(2)}`;
+        }
+
+        function removeItemFromCart(item) {
+        const itemIndex = cart.findIndex(cartItem => cartItem.title === item.title);
+        if (itemIndex !== -1) {
+            cart.splice(itemIndex, 1);
+            updateCart();
+        }
+        }
+
+        checkoutButton.addEventListener("click", function() {
+        overlay.style.display = "flex";
+        });
+
+        checkoutForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const name = document.querySelector("#name").value;
+        const email = document.querySelector("#email").value;
+        const address = document.querySelector("#address").value;
+
+        if (name && email && address) {
+            // Perform checkout logic here, e.g., send order details to a server
+            alert("Order placed successfully!");
+            cart = [];
+            updateCart();
+            overlay.style.display = "none";
+        } else {
+            alert("Please fill in all the fields.");
+        }
+        });
+
+        cancelButton.addEventListener("click", function() {
+        overlay.style.display = "none";
+        });
+        });
+    </script>
+</body>
+</html>

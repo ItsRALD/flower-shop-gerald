@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+  
+<button id="myButton">Submit</button>
+
+<div class="popup" id="myPopup">
+  <h2>Thank You!</h2>
+  <p>Your form has been submitted.</p>
+  <button class="close" id="closeButton">Close</button>
+</div> 
+</body>
+</head>
+</html>
+<style>
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: none;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+  }
+  
+  .popup p {
+    margin-bottom: 20px;
+  }
+  
+  .close {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .close:hover {
+    background-color: #3e8e41;
+  }
+  
+  .show {
+    display: block;
+  }
+  var myButton = document.getElementById("myButton");
+var myPopup = document.getElementById("myPopup");
+var closeButton = document.getElementById("closeButton");
+
+myButton.addEventListener("click", function() {
+  myPopup.classList.add("show");
+});
+
+closeButton.addEventListener("click", function() {
+  myPopup.classList.remove("show");
+});
+
+</style>
